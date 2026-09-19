@@ -101,7 +101,7 @@ awk '{print $4, $7}' corp_proxy.log | sort | uniq -c | sort -rn | head
 
 - The full analysis, kill chain, IOC table and answer key ship separately (not in this repo).
 - The deterministic PowerShell generator is kept out of the repo so log provenance is not spoiled.
-- Budget: **~4–6 hours** for the standard worksheet; **~6–8 hours** for the guided version
+- Budget: **~2–4 hours** for the standard worksheet; **~3–5 hours** for the guided version
   (first-time learners plus command/tool teaching). Parts 1–2 can be cut for a shorter lab (they
   are the "know your logs + baseline" foundation, so prefer cutting Part 5 depth instead).
 - Teaching highlights built in:
