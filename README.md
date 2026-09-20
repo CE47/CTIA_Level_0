@@ -97,21 +97,6 @@ awk '{print $4, $7}' corp_proxy.log | sort | uniq -c | sort -rn | head
 
 ---
 
-## Notes for instructors
-
-- The full analysis, kill chain, IOC table and answer key ship separately (not in this repo).
-- The deterministic PowerShell generator is kept out of the repo so log provenance is not spoiled.
-- Budget: **~2–4 hours** for the standard worksheet; **~3–5 hours** for the guided version
-  (first-time learners plus command/tool teaching). Parts 1–2 can be cut for a shorter lab (they
-  are the "know your logs + baseline" foundation, so prefer cutting Part 5 depth instead).
-- Teaching highlights built in:
-  - `Mfa: Not required` on every CFO sign-in = root-cause enabler,
-  - `New-InboxRule` with `MarkAsRead`+`MoveToFolder`+`ForwardTo` = hidden persistence,
-  - `original-client-ip` mismatch on OWA submissions = the mail sent by the attacker,
-  - total **absence** of attacker traffic in the proxy = external account takeover.
-
----
-
 ## Disclaimer & license
 
 Synthetic data for education. All trademarks belong to their owners.
